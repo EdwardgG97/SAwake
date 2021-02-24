@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SAwakePU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>org.sawake.entity.Grados</class>
+    <class>org.sawake.entity.Estudiantes</class>
+    <class>org.sawake.entity.Salones</class>
+    <class>org.sawake.entity.Asistencia</class>
+    <class>org.sawake.entity.Administracion</class>
+    <class>org.sawake.entity.Dias</class>
+    <class>org.sawake.entity.Grupo</class>
+    <class>org.sawake.entity.Docentes</class>
+    <class>org.sawake.entity.Obs</class>
+    <class>org.sawake.entity.Acudientes</class>
+    <class>org.sawake.entity.Registro</class>
+    <class>org.sawake.entity.AcuEst</class>
+    <class>org.sawake.entity.TiposAlerta</class>
+    <class>org.sawake.entity.Observador</class>
+    <class>org.sawake.entity.Alertas</class>
+    <class>org.sawake.entity.TiposFaltas</class>
+    <class>org.sawake.entity.FaltasAlertas</class>
+    <class>org.sawake.entity.CorrectivosFaltas</class>
+    <properties>
+      <property name="eclipselink.canonicalmodel.subpackage" value="dev"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/spawake"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+    </properties>
+  </persistence-unit>
+</persistence>
